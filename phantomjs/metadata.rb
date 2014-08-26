@@ -10,5 +10,3 @@ version '1.0.3'
   supports os
 end
 
-depends 'build-essential'
-depends 'chocolatey'
