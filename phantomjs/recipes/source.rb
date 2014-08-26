@@ -18,9 +18,6 @@
 # limitations under the License.
 #
 
-# External recipes
-include_recipe 'build-essential::default'
-
 # Internal recipes
 include_recipe 'phantomjs::structure'
 
