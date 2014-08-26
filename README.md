@@ -3,7 +3,7 @@ avantia-opsworks
 
 opsworks recipes
 
-Uses phantomjs recipe by
+Uses phantomjs recipe (https://github.com/customink-webops/phantomjs) by
 -------------------
 - Author: Seth Vargo (sethvargo@gmail.com)
 
