@@ -1,0 +1,1 @@
+cookbook 'phantomjs', '~> 1.0.3'
