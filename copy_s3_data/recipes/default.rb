@@ -10,6 +10,6 @@ files.each do |file|
 	bash 'copy_file' do
 		user user
 		cwd ::File.dirname(file[:copy_to])
-		code "aws s3 cp s3://#{file[:bucket]}/#{file[:key]} #{file[:copy_to]}"
+		code "export AWS_ACCESS_KEY_ID=#{node[:copy_s3_data][:aws_access_key]}; export AWS_SECRET_ACCESS_KEY=#{node[:copy_s3_data][:aws_secret_key]}; aws s3 cp s3://#{file[:bucket]}/#{file[:key]} #{file[:copy_to]}"
 	end
 end
